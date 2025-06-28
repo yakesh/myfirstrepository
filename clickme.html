@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="abc" style="width:100px; height: 100px; background-color:blue"></div>
+    <button id="TAP">TAP ME</button>
+    <script>
+        let a = document.getElementById("abc");
+        a.addEventListener("mouseenter",function(){
+            a.style.backgroundColor ="green";
+            a.innerHTML ="doubleclick";
+            a.style.backgroundcolor === "yellow";
+        })
+        a.addEventListener("mouseout",function(){
+                        a.style.backgroundColor ="red";
+        })
+        document.getElementById("TAP").addEventListener("click",function(){
+            alert("button was clicked");
+        });
+        </script>
+</body>
+</html>
+!
